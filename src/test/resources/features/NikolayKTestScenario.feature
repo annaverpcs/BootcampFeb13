@@ -1,5 +1,5 @@
 #Author: Nikolay Komarov
-  # FEB-52 - manual test cases
+  # FEB-52 - manual test cases (User stoty #3)
 
   Feature:
 
@@ -76,6 +76,34 @@
       And I click on element with xpath "//button[contains(text(),'Remove specialist')]"
       And I wait for 2 sec
       And element with xpath "//td[contains(text(),'Don Dear1000')]" should not be present
+
+
+        # FEB-52 - manual test cases (User stoty #8)
+
+    Scenario: Delete appointment as a patient
+      Given I open url "https://medicenter-qa2.vercel.app/"
+      And I click on element with xpath "//button[contains(text(),'Login')]"
+      #login page
+      And I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+      And I type "donsereda@howeremedyshop.com" into element with xpath "//input[@id='email']"
+      Then I type "123abc" into element with xpath "//input[@id='password']"
+      Then I click on element with xpath "//button[contains(text(),'Sign in')]"
+      #home page
+      And I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
+      Then I wait for element with xpath "//h1[contains(text(),'Nick Tul')]" to be present
+      And element with xpath "//h1[contains(text(),'Nick Tul')]" should be present
+      And element with xpath "//h1[contains(text(),'Nick Tul')]" should contain text "Nick Tul"
+      And I click on element with xpath "//button[contains(text(),'Make an appointment')]"
+      And element with xpath "//span[contains(text(),'Make an appointment')]" should be present
+      And I type "Pain in a left leg" into element with xpath "//textarea[@id='note']"
+      And I click on element with xpath "//option[contains(text(),'Choose specialist')]"
+      And I click on element with xpath "//body[1]/div[3]/div[1]/form[1]/div[1]/select[1]/option[3]"
+      And I click on element with xpath "//input[@id='date']"
+      And I type "08302024" into element with xpath "//input[@id='date']"
+      And I click on element with xpath "//button[contains(text(),'08:00 AM')]"
+      And I click on element with xpath "//button[contains(text(),'Save')]"
+
+
 
 
 
