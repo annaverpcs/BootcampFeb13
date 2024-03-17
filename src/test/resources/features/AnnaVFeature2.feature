@@ -41,4 +41,4 @@ Feature: Appointment related test scenarios
     And I wait for 1 sec
       #verification of appointment cancellation
     And element with xpath "//p[contains(text(),'AnnaV Unique appointment theme 1')]" should not be present
-#
+
