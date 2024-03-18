@@ -579,7 +579,7 @@
       Then I mouse over element with xpath "//td[text()='Don hsh4533rsegsfdg5w65w46yw45ywysyhjjdsAAAAAAgsgfshgsfg342////hhstsrhjytdjdtjd=-hssthhtrhtrhnmmseeett']/following-sibling::td/div/span/span[contains(text(),'delete')]"
       Then I click on element with xpath "//td[text()='Don hsh4533rsegsfdg5w65w46yw45ywysyhjjdsAAAAAAgsgfshgsfg342////hhstsrhjytdjdtjd=-hssthhtrhtrhnmmseeett']/following-sibling::td/div/span/span[contains(text(),'delete')]"
       And I click on element with xpath "//button[contains(text(),'Remove specialist')]"
-      And I wait for 2 sec
+      And I wait for 3 sec
       And element with xpath "//td[contains(text(),'Don hsh4533rsegsfdg5w65w46yw45ywysyhjjdsAAAAAAgsgfshgsfg342////hhstsrhjytdjdtjd=-hssthhtrhtrhnmmseeett')]" should not be present
 
 
