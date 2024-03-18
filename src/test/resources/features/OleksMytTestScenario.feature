@@ -1,3 +1,5 @@
+#Author: Oleksandr Mytrokhin
+
 Feature:Login to Medical Center
 
   Scenario: Login as Administrator
