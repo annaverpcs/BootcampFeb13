@@ -1,7 +1,7 @@
 #Author: Nikolay Komarov
   # FEB-52 - manual test cases (User stoty #3)
-
-  Feature:
+@medicenter
+  Feature: test
 
     Scenario:Add new specialist as administrator
       Given I open url "https://medicenter-qa2.vercel.app/"

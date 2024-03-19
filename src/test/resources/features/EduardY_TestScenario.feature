@@ -2,7 +2,7 @@
   # FEB-13 - manual test cases
   # As an administrator, I can review an appointment in Calendar
   # As an administrator, I can edit a specialist data
-
+@medicenter
 Feature: As an administrator, I can edit a specialist data
 
   Scenario: Administrator has "edit" button at specialists
