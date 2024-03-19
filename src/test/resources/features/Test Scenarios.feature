@@ -1,3 +1,4 @@
+@medicenter
 Feature: login page
   Scenario: login as administrator
     Given I open url "https://medicenter-qa2.vercel.app/"
