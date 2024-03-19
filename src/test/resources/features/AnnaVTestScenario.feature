@@ -1,7 +1,7 @@
 # Author: Anna Verkhovskaya
   # FEB-50 - manual test cases
   # This test Scenarios for different type of logins
-
+@medicenter
 Feature:Login to Medical Center
   #prerequisites for tes scenarios
   Background:
