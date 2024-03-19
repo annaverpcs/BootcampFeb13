@@ -1,3 +1,4 @@
+@medicenter
 Feature: Medical Center Test Scenarios with Selenium WebDriver methods
   Scenario: Login with Selenium WebDriver methods
       When AnnaV launch "https://medicenter-qa2.vercel.app/"
