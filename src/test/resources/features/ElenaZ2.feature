@@ -1,6 +1,6 @@
 # Author: ELena Zaretskaia
   #FEB-? - manual test cases
-
+@medicenter
 Feature: Appointment related test scenarios
 
   Scenario: Make an appointment and delete an appointment

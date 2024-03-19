@@ -1,6 +1,6 @@
 # Author: Tatiana Kulik
 
-
+@medicenter
 Feature:Login to Medical Center
 
   Scenario: Login as Administrator

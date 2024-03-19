@@ -1,7 +1,7 @@
 @medicenter
 Feature: Medical Center Test Scenarios with Selenium WebDriver methods
   Scenario: Login with Selenium WebDriver methods
-      When AnnaV launch "https://medicenter-qa2.vercel.app/"
+      When AnnaV launch "MedicenterV2"
       Then AnnaV click on "Login" button
       Then AnnaV type "patient1@gmail.com" to "Email" field
       Then AnnaV type "abc123" to "Password" field

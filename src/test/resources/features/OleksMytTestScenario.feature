@@ -1,5 +1,5 @@
 #Author: Oleksandr Mytrokhin
-
+@medicenter
 Feature:Login to Medical Center
 
   Scenario: Login as Administrator
