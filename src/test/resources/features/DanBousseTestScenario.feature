@@ -1,6 +1,6 @@
 Feature: Login to Medical Center
   
-  Scenario: 
+  Scenario: Login as administrator
     Given I open url "https://medicenter-qa2.vercel.app/"
     Then I click on element with xpath "//button[contains(text(),'Login')]"
     Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
