@@ -35,3 +35,4 @@ Feature: Login to Medical Center
     And element with xpath "//h1[contains(text(),'Ben Simpson')]" should contain text "Ben Simpson"
     Then I click on element with xpath "//button[text()='Logout']"
     Then I wait for element with xpath "//button[contains(text(),'Login')]" to be present
+
