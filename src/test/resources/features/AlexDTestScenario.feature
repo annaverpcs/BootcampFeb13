@@ -1,7 +1,7 @@
 # Author: Oleksandr Dubynskyi
   # FEB-  - manual test cases
   # This test Scenarios for different type of logins
-
+@medicenter
 Feature: Login to Medical Center
 
   Scenario: Login as Administrator

@@ -1,10 +1,11 @@
 #Author: Dan B
 # FEB-155 manual tc
 #This test scenarios for different types of logins
-
+@medicenter
 Feature: Login to Medical Center
 
   Scenario: Login as administrator
+
     Given I open url "https://medicenter-qa2.vercel.app/"
     Then I click on element with xpath "//button[contains(text(),'Login')]"
     #sign_in page
