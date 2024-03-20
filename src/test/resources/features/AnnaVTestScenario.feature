@@ -1,7 +1,7 @@
 # Author: Anna Verkhovskaya
   # FEB-50 - manual test cases
   # This test Scenarios for different type of logins
-
+@medicenter @regression
 Feature:Login to Medical Center
   #prerequisites for tes scenarios
   Background:
@@ -27,7 +27,7 @@ Feature:Login to Medical Center
     Then I click on element with xpath "//span[contains(text(),'logout')]"
     And I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
     And element with xpath "//h1[contains(text(),'Medical Center')]" should contain text "Medical Center"
-
+@smoke
   Scenario: Login as Patient
    # Given I open url "https://medicenter-qa2.vercel.app/"
    # Then I click on element with xpath "//button[contains(text(),'Login')]"
