@@ -1,5 +1,5 @@
 #Author: Aleksei Shakh
-
+@medicenter
 Feature: Login as administrator
 #prerequisits
   Background:

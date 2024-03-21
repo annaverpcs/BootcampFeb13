@@ -1,4 +1,4 @@
-
+@medicenter
 Feature: Appointment related scenarios
   #Bug found in appointment saved with one date less than typed
   #EX: date selected in this scenario 04/09/2024 but appointment saved as 04/08/2024
