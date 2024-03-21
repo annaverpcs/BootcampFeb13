@@ -1,5 +1,9 @@
 #Author: Oleksandr Mytrokhin
 # based on FEB-497
+<<<<<<< HEAD
+=======
+@medicenter
+>>>>>>> main
 Feature:Login to Medical Center
 
   Scenario: Login as Patient
