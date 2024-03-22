@@ -1,22 +1,22 @@
-#Author: Rezeda Ryzhkov
+# Author: Tatiana Kulik
+
 @medicenter
-Feature: Login to Medical Center
-  
+Feature:Login to Medical Center
+
   Scenario: Login as Administrator
     Given I open url "https://medicenter-qa2.vercel.app/"
-    Then I click on element using JavaScript with xpath "//button[contains(text(),'Login')]"
-
-    #Login page
-  Then I wait for element with xpath "//a[contains(text(),'Back to home')]" to be present
-  Then I type "administrator2@gmail.com" into element with xpath "//input[@id='email']"
+    Then I click on element with xpath "//button[contains(text(),'Login')]"
+    #login page
+    Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+    Then I type "administrator2@gmail.com" into element with xpath "//input[@id='email']"
     Then I type "abc123" into element with xpath "//input[@id='password']"
     And I click on element with xpath "//button[contains(text(),'Sign in')]"
-   #Home page
+    #home page
     Then I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
     Then I wait for element with xpath "//h1[contains(text(),'Calvin Grant')]" to be present
-    #Logout
+    And element with xpath "//h1[contains(text(),'Calvin Grant')]" should be present
+    And element with xpath "//h1[contains(text(),'Calvin Grant')]" should contain text "Calvin Grant"
+    #logout
     Then I click on element with xpath "//span[contains(text(),'logout')]"
     And I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
-
-
-    Then I wait for 3 sec
+    And I wait for 5 sec
