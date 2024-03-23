@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 #Author: Vladimir Ni
   #FEB-282 - Manual Test Set
 
 
+=======
+@medicenter
+>>>>>>> main
 Feature: Login to Medical Center
 
   Scenario: Login as Administrator
