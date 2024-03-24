@@ -6,6 +6,7 @@ Feature: Login to Medical Center
   Scenario: Login as Patient and logout
     Given I open url "https://medicenter-qa2.vercel.app/"
     Then I click on element with xpath "//button[contains(text(),'Login')]"
+<<<<<<< HEAD
     Then I wait for element with xpath "//a[text()='Back to home']" to be present
     Then I type "patient2@gmail.com" into element with xpath "//input[@placeholder='Your email address']"
     Then I type "abc123" into element with xpath "//input[@placeholder='Your password']"
@@ -52,3 +53,7 @@ Scenario: Login with invalid password
       Then I click on element with xpath "//button[@type='submit']"
       Then I wait for element with xpath "//span[contains(text(),'Invalid login credentials')]" to be present
       And  I wait for 3 sec
+=======
+    And I wait for 3 sec
+p
+>>>>>>> main
