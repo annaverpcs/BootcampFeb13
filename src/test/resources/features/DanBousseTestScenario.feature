@@ -1,6 +1,7 @@
 #Author: Dan B
 # FEB-155 manual tc
 #This test scenarios for different types of logins
+  #draft--------draft---------draft-----------draft---------draft
 @medicenter
 Feature: Login to Medical Center
 
@@ -39,12 +40,12 @@ Feature: Login to Medical Center
   ##################################################################################
 
     #Data driven scenario
-Feature: Data driven Login scenario
+#Feature: Data driven Login scenario
   #prerequisites for scenarios
-  Background:
-    Given I open url "https://medicenter-qa2.vercel.app/"
-    Then I click on element with xpath "//button[contains(text(),'Login')]"
-    Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+ # Background:
+    #Given I open url "https://medicenter-qa2.vercel.app/"
+   # Then I click on element with xpath "//button[contains(text(),'Login')]"
+    #Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
 
 
   Scenario Outline: Login as patient data driven scenario
