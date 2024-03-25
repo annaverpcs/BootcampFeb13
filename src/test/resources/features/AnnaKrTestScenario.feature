@@ -1,7 +1,7 @@
 #Author: Anna Krylova
   #FEB-42 - manual test cases
   #This test Scenarios for different type of logins
-
+@medicenter
 Feature: Login to Medical Center
   #prerequisites for test scenarios
   Background:

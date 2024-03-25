@@ -1,7 +1,7 @@
 #Author: Vladimir Ni
 # FEB-282 - Manual Test Set
 
-
+@medicenter
 Feature: Login to Medical Center
 
   Scenario: Login as Administrator

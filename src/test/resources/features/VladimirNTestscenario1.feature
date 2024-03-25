@@ -1,7 +1,7 @@
 #Author: Vladimir Ni
 # FEB-282 - Manual Test Set
 
-
+@medicenter
 Feature: Appointment related test scenarios
 
   Scenario: Make an appointment and delete an appointment
