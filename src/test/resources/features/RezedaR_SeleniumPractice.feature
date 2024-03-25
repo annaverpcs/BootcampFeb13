@@ -1,0 +1,1 @@
+Feature: Medical Center Test Scenarios with Selenium WebDriver methods
