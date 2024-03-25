@@ -1,13 +1,20 @@
 #Author: Anna Krylova
   #FEB-42 - manual test cases
+   # As an administrator, I can edit a specialist data
+  # As an administrator, I can review an appointment in Calendar
 
   Feature: Appointment related test scenarios
-
-    Scenario: Make an appointment and delete an appointment
+      #prerequisites for test scenarios
+    Background:
       Given I open url "https://medicenter-qa2.vercel.app/"
       Then I click on element with xpath "//button[contains(text(),'Login')]"
-    #login page
       Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+
+    Scenario: Make an appointment and delete an appointment
+      #Given I open url "https://medicenter-qa2.vercel.app/"
+      #Then I click on element with xpath "//button[contains(text(),'Login')]"
+    #login page
+      #Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
       Then I type "patient1@gmail.com" into element with xpath "//input[@id='email']"
       Then I type "abc123" into element with xpath "//input[@id='password']"
       And I click on element with xpath "//button[contains(text(),'Sign in')]"
@@ -42,5 +49,49 @@
       #verification of appointment cancellation
       #And element with xpath "//p[contains(text(),'AnnaKr Unique appointment theme 1')]" should not be present
 
+    Scenario: As administrator, I can select Edit Specialist info from Specialists List
+      #Given I open url "https://medicenter-qa2.vercel.app/"
+    #Then I click on element with xpath "//button[contains(text(),'Login')]"
+    #login page
+    #Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+      Then I type "administrator1@gmail.com" into element with xpath "//input[@id='email']"
+      Then I type "abc123" into element with xpath "//input[@id='password']"
+      And I click on element with xpath "//button[contains(text(),'Sign in')]"
+      #home page
+      Then I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
+      Then I wait for element with xpath "//h1[contains(text(),'Mary Poppins')]" to be present
+      And element with xpath "//h1[contains(text(),'Mary Poppins')]" should be present
+      And element with xpath "//h1[contains(text(),'Mary Poppins')]" should contain text "Mary Poppins"
+      Then I wait for 5 sec
+    #Make sure that administrator has "edit" button at specialist
+      Then I wait for element with xpath "//button[contains(text(),'Specialists')]" to be present
+      Then I click on element with xpath "//button[contains(text(),'Specialists')]"
+      Then I wait for 5 sec
+      Then I wait for element with xpath "//span[@id=':r166:']" to be present
+      Then I click on element with xpath "//span[@id=':r166:']"
+      Then I wait for 5 sec
+    #pop up window Edit Specialist info are correctly displayed
 
-
+    Scenario: As administrator, I can delete Specialist from Specialists List
+            #Given I open url "https://medicenter-qa2.vercel.app/"
+    #Then I click on element with xpath "//button[contains(text(),'Login')]"
+    #login page
+    #Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+      Then I type "administrator1@gmail.com" into element with xpath "//input[@id='email']"
+      Then I type "abc123" into element with xpath "//input[@id='password']"
+      And I click on element with xpath "//button[contains(text(),'Sign in')]"
+      #home page
+      Then I wait for element with xpath "//h1[contains(text(),'Medical Center')]" to be present
+      Then I wait for element with xpath "//h1[contains(text(),'Mary Poppins')]" to be present
+      And element with xpath "//h1[contains(text(),'Mary Poppins')]" should be present
+      And element with xpath "//h1[contains(text(),'Mary Poppins')]" should contain text "Mary Poppins"
+      Then I wait for 5 sec
+    #Make sure that administrator has "delete" button at specialists
+      Then I wait for element with xpath "//button[contains(text(),'Specialists')]" to be present
+      Then I click on element with xpath "//td[contains(text(),'Dva')]"
+      Then I click on element with xpath "//span[@id=':r17e:']"
+      Then I wait for 3 sec
+      #Make sure that popup window "Removing specialist" is present
+      Then I click on element with xpath "//button[contains(text(),'Remove specialist')]"
+      Then I wait for element with xpath "//*[contains(text(),'Odin Dva')]" to not be present
+      Then I wait for 3 sec

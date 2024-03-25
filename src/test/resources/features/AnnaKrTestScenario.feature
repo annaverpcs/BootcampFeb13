@@ -1,14 +1,15 @@
 #Author: Anna Krylova
   #FEB-42 - manual test cases
-  #This test Scenarios for different type of logins
+  # As an administrator, I can edit a specialist data
+  # As an administrator, I can review an appointment in Calendar
 
+@medicenter @regression
 Feature: Login to Medical Center
   #prerequisites for test scenarios
   Background:
     Given I open url "https://medicenter-qa2.vercel.app/"
     Then I click on element with xpath "//button[contains(text(),'Login')]"
     Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
-
 
 
   Scenario: Login as Administrator
@@ -31,6 +32,7 @@ Feature: Login to Medical Center
     #And element with xpath "//h1[contains(text(),'Medical Center')]" should contain text "Medical Center"
     Then I wait for 5 sec
 
+  @smoke
   Scenario: Login as Patient
     #Given I open url "https://medicenter-qa2.vercel.app/"
     #Then I click on element with xpath "//button[contains(text(),'Login')]"
@@ -70,3 +72,4 @@ Feature: Login to Medical Center
       | "patient3@gmail.com"      | "abc123"   |  "//h1[contains(text(),'Alice Wonderland')]"  |"Alice Wonderland" |
       | "administrator1@gmail.com"| "abc123"   |  "//h1[contains(text(),'Mary Poppins')]"      |"Mary Poppins"     |
       | "patient1@gmail.com"      | "abc123"   |  "//h1[contains(text(),'Incorrect Name')]"    |"Incorrect Name"    |
+
