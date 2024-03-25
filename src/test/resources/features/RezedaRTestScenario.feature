@@ -1,8 +1,13 @@
 #Author: Rezeda Ryzhkov
+<<<<<<< HEAD
 #FEB-125 manual test cases
   # This test scenarios are for adding appointment as administrator
 
 Feature: Add Appointment as Administrator
+=======
+@medicenter
+Feature: Login to Medical Center
+>>>>>>> main
   
   Scenario: Appointment creation with valid data set
     Given I open url "https://medicenter-qa2.vercel.app/"
