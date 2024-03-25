@@ -39,15 +39,14 @@ Feature: Login to Medical Center
   ##################################################################################
 
     #Data driven scenario
-Feature: Data driven Login scenario
-  #prerequisites for scenarios
-  Background:
-    Given I open url "https://medicenter-qa2.vercel.app/"
-    Then I click on element with xpath "//button[contains(text(),'Login')]"
-    Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
+
+
 
 
   Scenario Outline: Login as patient data driven scenario
+    Given I open url "https://medicenter-qa2.vercel.app/"
+    Then I click on element with xpath "//button[contains(text(),'Login')]"
+    Then I wait for element with xpath "//label[contains(text(),'Email address')]" to be present
     Then I type <emailAddress> into element with xpath "//input[@id='email']"
     Then I type <Password> into element with xpath "//input[@id='password']"
     And I click on element with xpath "//button[contains(text(),'Sign in')]"
