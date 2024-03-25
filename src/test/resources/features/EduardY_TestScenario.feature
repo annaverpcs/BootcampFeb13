@@ -90,6 +90,4 @@ Feature: As an administrator, I can edit a specialist data
     And I type "17:25" into element with xpath "//input[@id='working_hours.friday.to']"
     # Close
     Then I click on element with xpath "//span[contains(text(),'close')]"
-    And I wait for 3 secgit status
-
-
+    And I wait for 3 sec
