@@ -1,6 +1,6 @@
 #Author:Elena Busurkina
    #Feb-218 -manual test cases
-
+@medicenter
 Feature: Make an appointment as a patient
 #login as a patient
   Scenario: Make an appointment and delete
